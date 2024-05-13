@@ -28,6 +28,7 @@ io.on("connection", (socket) => {
 
   socket.on("chat message", (obj) => {
     io.emit("chat message", obj);
+    console.log("teste")
   });
 
   socket.on("disconnect", () => {
